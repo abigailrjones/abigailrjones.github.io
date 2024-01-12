@@ -1,32 +1,156 @@
 
-* {
-    font-family: Courier, Tahoma, sans-serif;
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+}
+
+/* general styling */
+
+p, ul {
+    font-family: "Montserrat", Arial, Courier New, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 
-h1 {
-    font-family: Tahoma, sans-serif;
+/* styling header */
+
+/* style header (which contains title name and navigation bar) */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 30px;
+    /* top/bottom left/right */
+    margin: 40px 10% 20px 10%;
+}
+
+/* styling title name */
+#title-name {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 1000;
     color: slateblue;
+}
+
+/* styling navigation bar */
+#nav a {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    color: slateblue;
+    padding: 10px;
+}
+
+#nav a:hover {
+    padding: 10px;
+    text-decoration: underline;
+}
+
+
+
+/* styling body page content */
+
+div.in-body {
+    padding: 10px;
+    /* top/bottom left/right */
+    margin: 10px 15%;
+}
+
+
+/* styling title / date / essay for blurb */
+
+div.essay-blurb {
+    padding: 10px;
+    border-bottom: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+    /* top/bottom left/right */
+    margin: 20px 5%;
+}
+
+div.essay-blurb a.essay-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+div.essay-blurb p.essay-date {
+    font-size: 11px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+div.essay-blurb p {
+    font-size: 13px;
+}
+
+
+/* styling title / date / essay in proper essay page */
+
+div.essay {
+    margin: 50px 20% 100px 20%;
+    border-bottom: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+}
+
+div.essay p.essay-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1;
+}
+
+div.essay p.essay-date {
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+div.essay p {
+    font-size: 14px;
+}
+
+
+/* styling container for image and text combo */
+
+div.container {
+    display: flex;
+}
+
+/* styling headshot (for some reason, it's rather huge) */
+img#head {
+    float: left;
+    max-width: 200px; 
+    height: 275px;
+    padding: 10px 40px 10px 10px;
+}
+
+
+/* random bits and bobs */ 
+
+/* styling unordered lists */
+p + ul {
+    margin-top: -10px;
 }
 
 
 /* styling class for unordered lists (ul) without bullets */
-    .no_bullets {
-        list-style-type: none;
-    }
+.no_bullets {
+    list-style-type: none;
+}
 
 
-/* styling navigation bar */
-    #nav {
-        background: lightgray;
-        overflow: auto;
-    }
+/* stlying links */
+a {
+    text-decoration: none;
+}
 
-    #nav li {
-        float: left;
-        padding: 10px;
-    }
+a:hover {
+    text-decoration: underline;
+}
 
-    #nav li:hover {
-        background: gray;
-    }
