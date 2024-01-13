@@ -6,6 +6,8 @@
 
 /* general styling */
 
+html {background-color: #FFFDF8;}
+
 p, ul {
     font-family: "Montserrat", Arial, Courier New, sans-serif;
     font-size: 16px;
