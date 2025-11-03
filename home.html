@@ -1,75 +1,104 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            Home
-        </title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark light">
+    <title>
+        Abigail Jones
+    </title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
 
-    <body>
-        <header>
-            <div id="title-name">
-                Abigail Jones
-            </div>
+<body>
+    <header>
+        <h1>
+            Abigail Jones
+        </h1>
 
-            <div id="nav">
-                <a href="#about">about</a>
-                <a href="#research">research</a>
-                <a href="#teaching">teaching</a>
-                <a href="#cv">cv</a>
-                <a href="https://github.com/jabigair">code</a>
-            </div>
-        </header>
-            <div id="about">
-                <p>
-                    I am a second year Ph.D. student in the department of Mathematics at the University of Wisconsin-Madison. I completed my undergraduate degree in Mathematics at BYU in 2023.
-                    <br> <br>
+        <nav aria-label="primary-navigation">
+            <a href="home.html">about</a> |
+            <a href="projects.html">projects</a> |
+            <a href="resources.html">resources</a> |
+            <a href="colors.html">colors</a> |
+            <!-- <a href="#cv">cv</a> | -->
+            <a href="https://github.com/abigailrjones">code</a>
+        </nav>
+    </header>
 
-                    Email: abigailjones [at] math [dot] wisc [dot] edu
-                </p>
-                <img src="images/portrait.jpg" id="head">
-            </div>
+    <section>
+    <h2>about</h2>
+    <picture>
+        <img class="portrait"
+             src="images/portrait2.png"
+             alt="Picture of me, in front of some greenery.">
+    </picture>
+    <hr>
+    <p>
+        I am a third year PhD student in the department of Mathematics at the
+        University of Wisconsin-Madison. My advisor is <a
+        href="https://people.math.wisc.edu/~chr/index.html">Chris Rycroft</a>.
+    </p>
+    <p>
+        I am interested in all things computational. Currently, I am learning
+        about numerical algebraic geometry and how to model squishy objects in
+        fluids.
+    </p>
+    <p>
+        You can contact me at <mark>abigailjones [at] math [dot] wisc [dot] edu</mark>.
+    </p>
+    </section>
 
-            <div id="research">
-                <h2>Research</h2>
-                <p>
-                Very broadly, I'm interested in solving problems using computers. During my undergraduate, this looked like working on computational number theory. Now, it looks like using numerical methods to build simulations.
-                </p>
-            </div>
+    <section>
+    <h2>teaching</h2>
+    <hr>
+    <!-- for future semesters, may need to abbreviate Spring 2024 and Fall 2024 to
+        just 2024 spanning two columns (likewise for 2025) -->
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>Fall 2023</td>
+                    <td>Spring 2024</td>
+                    <td>Fall 2024</td>
+                    <td>Spring 2025</td>
+                    <td>Fall 2025</td>
+                </tr>
+                <tr>
+                    <td class="timeline-left nord7" colspan=1>Calculus 1</td>
+                    <td class="timeline-right nord10" colspan=4>Calculus 2</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </section>
 
-            <div id="teaching">
-                <h2>Teaching</h2>
-
-                <table>
-                    <th rowspan="4">UW-Madison</th>
-                    <tr>
-                        <td>Fall 2024</td>
-                        <td>MATH 222 (calculus 2)</td>
-                        <td>TA</td>
-                    </tr>
-                    <tr>
-                        <td>Spring 2024</td>
-                        <td>MATH 222 (calculus 2)</td>
-                        <td>TA</td>
-                    </tr>
-                    <tr>
-                        <td>Fall 2023</td>
-                        <td>MATH 221 (calculus 1)</td>
-                        <td>TA</td>
-                    </tr>
-                    <th rowspan="2">BYU</th>
-                    <tr>
-                        <td>Spring 2022</td>
-                        <td>MATH 113 (calculus 2)</td>
-                        <td>TA</td>
-                    </tr>
-                </table>
-            </div>
-    </body>
+    <section>
+    <h2>activities</h2>
+    <hr>
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>July 2025</td>
+                    <td>SIAM Conference on Applied Algebraic Geometry</td>
+                    <td>Madison, Wisconsin</td>
+                </tr>
+                <tr>
+                    <td>June 2025</td>
+                    <td>Lawrence Berkeley Labs (Mathematics Group)</td>
+                    <td>Berkeley, California</td>
+                </tr>
+                <tr>
+                    <td>May 2025</td>
+                    <td>AWM Research Symposium</td>
+                    <td>Madison, Wisconsin</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </section>
+</body>
 
 </html>

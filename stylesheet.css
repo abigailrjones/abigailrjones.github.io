@@ -1,108 +1,136 @@
+@import "nord.css";
 
 @font-face {
     font-family: "Montserrat";
     src: url("fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
 }
 
-/* general styling */
+/* @media (prefers-color-scheme: light) */
 
-body {
-    background: #0d0d2b;
-    color: whitesmoke;
-    margin: auto;
-    width: 42em;
-    font-family: "Montserrat", Arial, sans-serif;
-    font-size: 100%;
-    line-height: 150%;
-    padding-bottom: 3%;
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-h1, h2 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    padding-bottom: 3px;
-    border-bottom: 1px solid rgba(245, 245, 245, 0.5);
-}
-
-h1 { font-size: 175% }
-h2 { font-size: 125% }
-h3 { font-size: 100% }
-
-
-table {
-    padding-left: 5%;
-}
-
-th { text-align: left }
-th[rowspan] { vertical-align: top }
-th, td { padding: 1px 10px 1px 10px }
-
-/* styling header */
-
-/* style header (which contains title name and navigation bar) */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 5% 0px 1% 0px;
-    margin: auto;
-    width: 42em;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(245, 245, 245, 0.5);
 }
 
-/* styling title name */
-#title-name {
-    font-size: 200%;
-    text-decoration: none;
-    font-weight: 1000;
-    color: whitesmoke;
-}
-
-/* styling navigation bar */
-#nav a {
+/* general styling */
+body {
+    margin: 3% 20%;
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 16px;
-    color: whitesmoke;
-    padding: 10px;
+    background: var(--nord0);
+    color: var(--nord4);
 }
 
-#nav a:hover {
-    padding: 10px;
-    text-decoration: underline;
+section {
+    margin: 20px 0%;
 }
 
-
-/* styling headshot (for some reason, it's rather huge) */
-img#head {
-    max-width: 200px; 
-    height: 275px;
-    padding: 10px;
+p {
+    margin: 0px 0px 20px 0px
 }
 
-
-/* random bits and bobs */ 
-
-/* styling unordered lists */
-p + ul {
-    margin-top: -10px;
+hr {
+    margin: 0px 0px 10px 0px;
 }
 
-
-/* styling class for unordered lists (ul) without bullets */
-.no_bullets {
-    list-style-type: none;
+mark {
+    color: var(--nord4);
+    background-color: var(--nord2);
 }
 
+aside {
+    color: var(--nord9);
+}
 
-/* stlying links */
+/* tables */
+table {
+    table-layout: fixed;
+    margin: 10px 0px;
+}
+
+caption {
+    margin: 20px 0px;
+    caption-side: bottom;
+    font-size: 70%;
+}
+
+th,td {
+    padding: 0.25em 1em;
+}
+
+/* style teaching timeline table */
+.timeline-left { border-radius: 2em 0em 0em 2em; white-space: nowrap}
+.timeline-right { border-radius: 0em 2em 2em 0em; }
+
+/* style color palette table */
+.palette { width: 100px; height: 100px; border-radius: 100em; }
+.nord0 { background-color: var(--nord0); border: 1px solid var(--nord3); }
+.nord1 { background-color: var(--nord1); }
+.nord2 { background-color: var(--nord2); }
+.nord3 { background-color: var(--nord3); }
+.nord4 { background-color: var(--nord4); color: var(--nord0); }
+.nord5 { background-color: var(--nord5); color: var(--nord0); }
+.nord6 { background-color: var(--nord6); color: var(--nord0); }
+.nord7 { background-color: var(--nord7); color: var(--nord0); }
+.nord8 { background-color: var(--nord8); color: var(--nord0); }
+.nord9 { background-color: var(--nord9); color: var(--nord4); }
+.nord10 { background-color: var(--nord10); color: var(--nord4); }
+.nord11 { background-color: var(--nord11); color: var(--nord0); }
+.nord12 { background-color: var(--nord12); color: var(--nord0); }
+.nord13 { background-color: var(--nord13); color: var(--nord0); }
+.nord14 { background-color: var(--nord14); color: var(--nord0); }
+.nord15 { background-color: var(--nord15); color: var(--nord0); }
+
+/* links */
 a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+a:link {
+    color: var(--nord7);
 }
 
+a:visited {
+    color: var(--nord7);
+}
+
+a:hover {
+    color: var(--nord9);
+}
+
+/* lists */
+ol,ul,dl {
+    margin: 0.5em 2em;
+}
+
+li,dt {
+    margin-top: 0.75em;
+}
+
+dd {
+    margin-left: 1.5em;
+    margin-top: 0.15em;
+}
+
+/* images */
+img {
+}
+
+img.portrait {
+    margin: 2% 5%;
+    max-width: 12em;
+    float: right;
+    border-radius: 4em 4em 4em 4em;
+    opacity: 0.9;
+}
+
+img.koi {
+    max-width: 30%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
