@@ -21,6 +21,7 @@ header {
 body {
     margin: 3% 20%;
     font-family: "Montserrat", Arial, sans-serif;
+    font-size: 100%;
     background: var(--nord0);
     color: var(--nord4);
 }
@@ -64,6 +65,7 @@ th,td {
 
 /* style teaching timeline table */
 .timeline-left { border-radius: 2em 0em 0em 2em; white-space: nowrap}
+.timeline-mid { border-radius: 0em 0em 0em 0em; }
 .timeline-right { border-radius: 0em 2em 2em 0em; }
 
 /* style color palette table */
@@ -121,11 +123,10 @@ img {
 }
 
 img.portrait {
-    margin: 2% 5%;
-    max-width: 12em;
+    margin: 0% 2%;
+    max-width: 16em;
     float: right;
-    border-radius: 4em 4em 4em 4em;
-    opacity: 0.9;
+    border-radius: 6em 6em 6em 6em;
 }
 
 img.koi {
