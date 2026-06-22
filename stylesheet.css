@@ -140,7 +140,7 @@ img {
     img.portrait {
         margin: 2% 2% 2%;
         width: 40%;
-        max-width: 225px;
+        max-width: 250px;
         float: right;
         border-radius: 25vw 25vw 25vw 25vw;
     }
