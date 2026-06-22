@@ -122,16 +122,26 @@ dd {
 img {
 }
 
-img.portrait {
-    margin: 0% 2%;
-    max-width: 17em;
-    float: right;
-    border-radius: 6em 6em 6em 6em;
+/* mobile devices */
+@media (max-width: 600px) {
+    img.portrait {
+        display: block;
+        margin: auto;
+        width: 60%;
+        border-radius: 40vw 40vw 40vw 40vw;
+    }
+    body {
+        margin: 5% 3%;
+    }
 }
 
-img.koi {
-    max-width: 30%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+/* non-mobile devices */
+@media (min-width: 601px) {
+    img.portrait {
+        margin: 2% 2% 2%;
+        width: 40%;
+        max-width: 200px;
+        float: right;
+        border-radius: 25vw 25vw 25vw 25vw;
+    }
 }
